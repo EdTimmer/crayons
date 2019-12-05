@@ -1,22 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
 .App {
+  background-color: rgb(255, 187, 0);
+  height: 100vh;
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding: 60px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: top;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #09d3ac;
+.container {
+  margin: 0;
+  position: relative;
+  display: flex;
+  direction: row;
+}
+
+.text {
+  position: absolute;
+  top: 49%;
+  left: 70%;
+  /* transform: translate(-30%,-30%);
+  -ms-transform: translate(-30%,-30%); */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.shadow {
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+.crayon-green {
+  /* margin-top: 50px; */
+  margin: 20px;
+  height: 50px;
+  width: 410px;
+  background: #237449;
+  clip-path: polygon(0 40%, 15% 10%, 15% 0, 100% 0, 100% 100%, 15% 100%, 15% 90%, 0 60%);
+  background-image: 
+    linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 17px,
+      rgba(255, 255, 255, 0.2) 22px,
+      rgba(255, 255, 255, 0.2) 24px,
+      rgba(255, 255, 255, 0) 29px),
+    /* ellipse printed on wrapper */
+    radial-gradient(ellipse at 58% 0,
+    rgba(0, 0, 0, 0.6) 80px,
+      transparent 84px
+      ),
+    /* cone edge */
+    linear-gradient(to right,
+      transparent 61px,
+      rgba(0, 0, 0, 0.2) 61px,
+      rgba(0, 0, 0, 0.2) 62px,
+      transparent 62px),
+    /* printed stripes */
+    linear-gradient(to right,
+      transparent 100px,
+      rgba(0, 0, 0, 0.6) 100px,
+      rgba(0, 0, 0, 0.6) 105px,
+      transparent 105px,
+      transparent 110px,
+      rgba(0, 0, 0, 0.6) 110px,
+      rgba(0, 0, 0, 0.6) 115px,
+      transparent 115px,
+      transparent 360px,
+      rgba(0, 0, 0, 0.6) 360px,
+      rgba(0, 0, 0, 0.6) 365px,
+      transparent 365px,
+      transparent 370px,
+      rgba(0, 0, 0, 0.6) 370px,
+      rgba(0, 0, 0, 0.6) 375px,
+      transparent 375px),
+    /* wrapper */
+    linear-gradient(to right,
+      transparent 80px,
+      rgba(41,237,133,.6) 80px,
+      rgba(41,237,133,.6) 390px,
+      transparent 390px),
+    /* crayon body shading */
+    linear-gradient(to bottom,
+      transparent 62%,
+      rgba(0, 0, 0, 0.3) 100%);
+  content: 'green';
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  padding-right: 47px;
+  padding-top: 17px;
+}
+
+.crayon-blue {
+  /* margin-top: 50px; */
+  margin: 20px;
+  height: 50px;
+  width: 410px;
+  background: #002df8;
+  clip-path: polygon(0 40%, 15% 10%, 15% 0, 100% 0, 100% 100%, 15% 100%, 15% 90%, 0 60%);
+  background-image: 
+    linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 17px,
+      rgba(255, 255, 255, 0.2) 22px,
+      rgba(255, 255, 255, 0.2) 24px,
+      rgba(255, 255, 255, 0) 29px),
+    /* ellipse printed on wrapper */
+    radial-gradient(ellipse at 58% 0,
+    rgba(0, 0, 0, 0.6) 80px,
+      transparent 84px
+      ),
+    /* cone edge */
+    linear-gradient(to right,
+      transparent 61px,
+      rgba(0, 0, 0, 0.2) 61px,
+      rgba(0, 0, 0, 0.2) 62px,
+      transparent 62px),
+    /* printed stripes */
+    linear-gradient(to right,
+      transparent 100px,
+      rgba(0, 0, 0, 0.6) 100px,
+      rgba(0, 0, 0, 0.6) 105px,
+      transparent 105px,
+      transparent 110px,
+      rgba(0, 0, 0, 0.6) 110px,
+      rgba(0, 0, 0, 0.6) 115px,
+      transparent 115px,
+      transparent 360px,
+      rgba(0, 0, 0, 0.6) 360px,
+      rgba(0, 0, 0, 0.6) 365px,
+      transparent 365px,
+      transparent 370px,
+      rgba(0, 0, 0, 0.6) 370px,
+      rgba(0, 0, 0, 0.6) 375px,
+      transparent 375px),
+    /* wrapper */
+    linear-gradient(to right,
+      transparent 80px,
+      rgba(12, 204, 238, 0.6) 80px,
+      rgba(12, 204, 238, 0.6) 390px,
+      transparent 390px),
+    /* crayon body shading */
+    linear-gradient(to bottom,
+      transparent 62%,
+      rgba(0, 0, 0, 0.3) 100%);
+  content: 'green';
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  padding-right: 47px;
+  padding-top: 17px;
+}
+
+.crayon-red {
+  /* margin-top: 50px; */
+  margin: 20px;
+  height: 50px;
+  width: 410px;
+  background: #f80000;
+  clip-path: polygon(0 40%, 15% 10%, 15% 0, 100% 0, 100% 100%, 15% 100%, 15% 90%, 0 60%);
+  background-image: 
+    linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 17px,
+      rgba(255, 255, 255, 0.2) 22px,
+      rgba(255, 255, 255, 0.2) 24px,
+      rgba(255, 255, 255, 0) 29px),
+    /* ellipse printed on wrapper */
+    radial-gradient(ellipse at 58% 0,
+    rgba(0, 0, 0, 0.6) 80px,
+      transparent 84px
+      ),
+    /* cone edge */
+    linear-gradient(to right,
+      transparent 61px,
+      rgba(0, 0, 0, 0.2) 61px,
+      rgba(0, 0, 0, 0.2) 62px,
+      transparent 62px),
+    /* printed stripes */
+    linear-gradient(to right,
+      transparent 100px,
+      rgba(0, 0, 0, 0.6) 100px,
+      rgba(0, 0, 0, 0.6) 105px,
+      transparent 105px,
+      transparent 110px,
+      rgba(0, 0, 0, 0.6) 110px,
+      rgba(0, 0, 0, 0.6) 115px,
+      transparent 115px,
+      transparent 360px,
+      rgba(0, 0, 0, 0.6) 360px,
+      rgba(0, 0, 0, 0.6) 365px,
+      transparent 365px,
+      transparent 370px,
+      rgba(0, 0, 0, 0.6) 370px,
+      rgba(0, 0, 0, 0.6) 375px,
+      transparent 375px),
+    /* wrapper */
+    linear-gradient(to right,
+      transparent 80px,
+      rgba(245, 109, 109, 0.6) 80px,
+      rgba(245, 109, 109, 0.6) 390px,
+      transparent 390px),
+    /* crayon body shading */
+    linear-gradient(to bottom,
+      transparent 62%,
+      rgba(0, 0, 0, 0.3) 100%);
+  content: 'green';
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  padding-right: 47px;
+  padding-top: 17px;
 }
