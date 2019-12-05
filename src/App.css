@@ -44,7 +44,6 @@ body {
 }
 
 .crayon-green {
-  /* margin-top: 50px; */
   margin: 20px;
   height: 50px;
   width: 410px;
@@ -95,7 +94,6 @@ body {
     linear-gradient(to bottom,
       transparent 62%,
       rgba(0, 0, 0, 0.3) 100%);
-  content: 'green';
   font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -106,7 +104,6 @@ body {
 }
 
 .crayon-blue {
-  /* margin-top: 50px; */
   margin: 20px;
   height: 50px;
   width: 410px;
@@ -157,7 +154,6 @@ body {
     linear-gradient(to bottom,
       transparent 62%,
       rgba(0, 0, 0, 0.3) 100%);
-  content: 'green';
   font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -168,7 +164,6 @@ body {
 }
 
 .crayon-red {
-  /* margin-top: 50px; */
   margin: 20px;
   height: 50px;
   width: 410px;
@@ -219,7 +214,66 @@ body {
     linear-gradient(to bottom,
       transparent 62%,
       rgba(0, 0, 0, 0.3) 100%);
-  content: 'green';
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  padding-right: 47px;
+  padding-top: 17px;
+}
+
+.crayon-yellow {
+  margin: 20px;
+  height: 50px;
+  width: 410px;
+  background: hsl(49, 100%, 49%);
+  clip-path: polygon(0 40%, 15% 10%, 15% 0, 100% 0, 100% 100%, 15% 100%, 15% 90%, 0 60%);
+  background-image: 
+    linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 17px,
+      rgba(255, 255, 255, 0.2) 22px,
+      rgba(255, 255, 255, 0.2) 24px,
+      rgba(255, 255, 255, 0) 29px),
+    /* ellipse printed on wrapper */
+    radial-gradient(ellipse at 58% 0,
+    rgba(0, 0, 0, 0.6) 80px,
+      transparent 84px
+      ),
+    /* cone edge */
+    linear-gradient(to right,
+      transparent 61px,
+      rgba(0, 0, 0, 0.2) 61px,
+      rgba(0, 0, 0, 0.2) 62px,
+      transparent 62px),
+    /* printed stripes */
+    linear-gradient(to right,
+      transparent 100px,
+      rgba(0, 0, 0, 0.6) 100px,
+      rgba(0, 0, 0, 0.6) 105px,
+      transparent 105px,
+      transparent 110px,
+      rgba(0, 0, 0, 0.6) 110px,
+      rgba(0, 0, 0, 0.6) 115px,
+      transparent 115px,
+      transparent 360px,
+      rgba(0, 0, 0, 0.6) 360px,
+      rgba(0, 0, 0, 0.6) 365px,
+      transparent 365px,
+      transparent 370px,
+      rgba(0, 0, 0, 0.6) 370px,
+      rgba(0, 0, 0, 0.6) 375px,
+      transparent 375px),
+    /* wrapper */
+    linear-gradient(to right,
+      transparent 80px,
+      rgba(245, 236, 109, 0.6) 80px,
+      rgba(245, 236, 109, 0.6) 390px,
+      transparent 390px),
+    /* crayon body shading */
+    linear-gradient(to bottom,
+      transparent 62%,
+      rgba(0, 0, 0, 0.3) 100%);
   font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;

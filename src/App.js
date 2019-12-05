@@ -19,6 +19,11 @@ function App() {
         <div className="crayon-red"></div>
         <div className="text">RED</div>
       </div> 
+
+      <div className="container shadow">
+        <div className="crayon-yellow"></div>
+        <div className="text">YELLOW</div>
+      </div> 
                   
     </div>
     
