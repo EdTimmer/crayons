@@ -23,6 +23,11 @@ function App() {
       <div className="container shadow">
         <div className="crayon-yellow"></div>
         <div className="text">YELLOW</div>
+      </div>
+
+      <div className="container shadow">
+        <div className="crayon-purple"></div>
+        <div className="text">PURPLE</div>
       </div> 
                   
     </div>
