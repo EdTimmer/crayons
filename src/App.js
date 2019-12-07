@@ -6,19 +6,9 @@ import './css/arrows.css';
 
 function App() {
 
-  // $('.icon').click(function(){
-  //   $(this)
-  //     .toggleClass('arrow-up')
-  //     .toggleClass('arrow-down');
-  // })
-
   const [positionClass, setPositionClass] = useState('arrow-up icon');
   const [positionIsUp, SetPositionIsUp] = useState(true);
 
-  
-  // const positionUp = true
-  // const up = 'arrow-up';
-  // const down = 'arrow-down';
   const animateFunc = () => {
     if (positionIsUp) {
       SetPositionIsUp(false);
@@ -71,9 +61,7 @@ function App() {
       
       <div className="arrows-box" onClick={animateFunc}>
         <div className={positionClass}></div>
-        <div className={positionClass}></div>
-      </div>
-      
+      </div>      
                   
     </div>
     
