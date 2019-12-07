@@ -1,35 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  padding: 20px;
-}
-
-/* .App {
-  background-color: rgb(255, 187, 0);
-  width: 100%;
-  text-align: center;
-  padding: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: top;
-  flex-direction: column;
-} */
-
 /* CRAYONS */
 
 .crayons {
   background-color: rgb(255, 187, 0);
-  /* height: 100vh; */
-  width: 100%;
+  height: 550px;
+  width: 50%;
   text-align: center;
-  padding: 60px;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: top;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -57,7 +36,7 @@ body {
 }
 
 .crayon-green {
-  margin: 20px;
+  margin: 15px;
   height: 50px;
   width: 410px;
   background: #237449;
@@ -117,7 +96,7 @@ body {
 }
 
 .crayon-blue {
-  margin: 20px;
+  margin: 15px;
   height: 50px;
   width: 410px;
   background: #002df8;
@@ -177,7 +156,7 @@ body {
 }
 
 .crayon-red {
-  margin: 20px;
+  margin: 15px;
   height: 50px;
   width: 410px;
   background: #f80000;
@@ -237,7 +216,7 @@ body {
 }
 
 .crayon-yellow {
-  margin: 20px;
+  margin: 15px;
   height: 50px;
   width: 410px;
   background: hsl(49, 100%, 49%);
@@ -297,7 +276,7 @@ body {
 }
 
 .crayon-purple {
-  margin: 20px;
+  margin: 15px;
   height: 50px;
   width: 410px;
   background: hsl(278, 100%, 49%);
@@ -357,7 +336,7 @@ body {
 }
 
 .crayon-brown {
-  margin: 20px;
+  margin: 15px;
   height: 50px;
   width: 410px;
   background: hsl(23, 62%, 15%);
@@ -414,43 +393,4 @@ body {
   text-align: right;
   padding-right: 47px;
   padding-top: 17px;
-}
-
-
-/* GM LOGO */
-
-.logo-box {
-  background: lightblue;
-  padding: 60px;
-}
-
-.gm {
-  display: block;
-  position: relative;
-  height: 100px;
-  width: 100px;
-  background: green;
-  margin: 10px auto;  
-  background-image:
-    linear-gradient(
-      45deg,
-      rgb(255, 0, 140) 0,
-      rgb(255, 0, 140) 50%,
-      transparent 50px
-    ),
-    linear-gradient(
-      135deg,      
-      yellow 0,
-      yellow 50%,
-      transparent 50%);    
-}
-
-.gm::after {
-  content: "";
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  background: blue;
-  top: 50%;
-  left: 50%;
 }

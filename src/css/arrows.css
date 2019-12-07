@@ -1,0 +1,64 @@
+/*ARROWS*/
+
+.arrows-box {
+  background: lightpink;
+  height: 550px;
+  width: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.arrow-up.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 3px;
+  height: 30px;
+  background-color: currentColor;
+}
+
+.arrow-up.icon:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  border-top: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.arrow-down.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 3px;
+  height: 30px;
+  background-color: currentColor;
+}
+
+.arrow-down.icon:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border-top: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+/* animation */
+
+.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
+  transition: all 0.4s ease;
+}

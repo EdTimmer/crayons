@@ -1,7 +1,34 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
+import './css/App.css';
+import './css/crayons.css';
+import './css/gmlogo.css';
+import './css/arrows.css';
 
 function App() {
+
+  // $('.icon').click(function(){
+  //   $(this)
+  //     .toggleClass('arrow-up')
+  //     .toggleClass('arrow-down');
+  // })
+
+  const [positionClass, setPositionClass] = useState('arrow-up icon');
+  const [positionIsUp, SetPositionIsUp] = useState(true);
+
+  
+  // const positionUp = true
+  // const up = 'arrow-up';
+  // const down = 'arrow-down';
+  const animateFunc = () => {
+    if (positionIsUp) {
+      SetPositionIsUp(false);
+    }
+    else {
+      SetPositionIsUp(true);
+    }
+    positionIsUp ? setPositionClass('arrow-up icon') : setPositionClass('arrow-down icon');
+  }
+ 
   return (
     <div className="App">
         
@@ -40,6 +67,11 @@ function App() {
             
       <div className="logo-box">
         <div className="gm"></div>
+      </div>
+      
+      <div className="arrows-box" onClick={animateFunc}>
+        <div className={positionClass}></div>
+        <div className={positionClass}></div>
       </div>
       
                   
