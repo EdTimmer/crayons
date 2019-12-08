@@ -9,27 +9,35 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  background-image:
+    radial-gradient(
+      circle at center,
+      transparent 90px,
+      black 90px,
+      black 100px,
+      transparent 100px
+    );
 }
 
 .arrow-up.icon {
   color: #000;
   position: absolute;
-  margin-left: 10px;
-  margin-top: 3px;
-  width: 3px;
-  height: 30px;
+  margin-left: 2px;
+  margin-top: 0;
+  width: 10px;
+  height: 100px;
   background-color: currentColor;
 }
 
 .arrow-up.icon:before {
   content: '';
   position: absolute;
-  left: -10px;
+  left: -25px;
   top: 1px;
-  width: 20px;
-  height: 20px;
-  border-top: solid 3px currentColor;
-  border-right: solid 3px currentColor;
+  width: 50px;
+  height: 50px;
+  border-top: solid 10px currentColor;
+  border-right: solid 10px currentColor;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -37,22 +45,22 @@
 .arrow-down.icon {
   color: #000;
   position: absolute;
-  margin-left: 10px;
-  margin-top: 2px;
-  width: 3px;
-  height: 30px;
+  margin-left: 2px;
+  margin-top: 0;
+  width: 10px;
+  height: 100px;
   background-color: currentColor;
 }
 
 .arrow-down.icon:before {
   content: '';
   position: absolute;
-  left: -10px;
-  top: 3px;
-  width: 20px;
-  height: 20px;
-  border-top: solid 3px currentColor;
-  border-right: solid 3px currentColor;
+  left: -25px;
+  top: 40px;
+  width: 50px;
+  height: 50px;
+  border-top: solid 10px currentColor;
+  border-right: solid 10px currentColor;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
